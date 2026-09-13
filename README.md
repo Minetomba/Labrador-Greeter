@@ -1,5 +1,5 @@
 ## Installation process
-Then you need to compile it. Make sure you're at the root of the repository and you have gcc installed.
+You need to compile it first. Make sure you're at the root of the repository and you have gcc installed.
 ```bash
 ./compile.sh
 ```
