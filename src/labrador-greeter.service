@@ -9,7 +9,7 @@ IgnoreOnIsolate=yes
 [Service]
 Type=simple
 
-ExecStart=/usr/local/bin/login-cli
+ExecStart=/usr/local/bin/labrador-greeter
 
 StandardInput=tty
 StandardOutput=tty

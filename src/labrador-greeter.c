@@ -213,7 +213,7 @@ int main(void)
 	char username[256];
 
 	/*
-	 * login-cli should be running as root.
+	 * labrador-greeter should be running as root.
 	 *
 	 * The systemd service, rather than a setuid bit, provides
 	 * the privileged execution context.
@@ -221,7 +221,7 @@ int main(void)
 	if (geteuid() != 0) {
 		fprintf(
 			stderr,
-			"login-cli must run as root\n"
+			"labrador-greeter must run as root\n"
 		);
 		return 1;
 	}
@@ -232,7 +232,7 @@ int main(void)
 	if (!isatty(STDIN_FILENO)) {
 		fprintf(
 			stderr,
-			"login-cli: stdin is not a terminal\n"
+			"labrador-greeter: stdin is not a terminal\n"
 		);
 		return 1;
 	}

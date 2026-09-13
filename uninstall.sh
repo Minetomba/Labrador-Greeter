@@ -3,16 +3,16 @@
 # SPDX-License-Identifier: GPL-3.0-only
 set -e
 
-echo "Deleting login-cli from systemd..."
-sudo systemctl stop login-cli@tty1.service || true
-sudo systemctl disable login-cli@tty1.service || true
-sudo rm -f /etc/systemd/system/login-cli@.service
+echo "Deleting labrador-greeter from systemd..."
+sudo systemctl stop labrador-greeter@tty1.service || true
+sudo systemctl disable labrador-greeter@tty1.service || true
+sudo rm -f /etc/systemd/system/labrador-greeter@.service
 echo "Removing executable..."
-sudo rm -f /usr/local/bin/login-cli
+sudo rm -f /usr/local/bin/labrador-greeter
 echo "Reloading systemd..."
 sudo systemctl daemon-reload
 echo "Restoring tty1 getty..."
 sudo systemctl unmask getty@tty1.service
 sudo systemctl unmask agetty@tty1.service
 sudo systemctl enable getty@tty1.service
-echo "login-cli removed!"
+echo "labrador-greeter removed!"
