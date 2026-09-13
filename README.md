@@ -1,5 +1,5 @@
 ## Installation process
-Then you need to compile it. Make sure you're at the root of the repository and you have musl-gcc installed.
+Then you need to compile it. Make sure you're at the root of the repository and you have gcc installed.
 ```bash
 ./compile.sh
 ```
