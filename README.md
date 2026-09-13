@@ -1,9 +1,5 @@
 ## Installation process
-First, you will need to run a system update.
-```bash
-sudo pacman -Syyu
-```
-Then you need to compile it. Make sure you're at the root of the repository.
+Then you need to compile it. Make sure you're at the root of the repository and you have musl-gcc installed.
 ```bash
 ./compile.sh
 ```
